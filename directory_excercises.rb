@@ -42,9 +42,9 @@ def print(students)
   until i >= students.length
     student = students[i]
     puts "#{i + 1}. #{student[:name]} (#{student[:cohort]} cohort)"
-    puts "Hobbies: #{student[:hobbies]}"
-    puts "Country of birth: #{student[:country_of_birth]}"
-    puts "Height: #{student[:height]}"
+    puts "Hobbies: #{student[:hobbies]}".center(:hobbies.length + 12)
+    puts "Country of birth: #{student[:country_of_birth]}".center(:country_of_birth.length + 16)
+    puts "Height: #{student[:height]}".center(:height.length + 12)
     i += 1
   end
 end
