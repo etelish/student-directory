@@ -4,7 +4,7 @@
     # create an empty array
     students = []
     # get the first name
-    name = gets.chomp
+    name = gets.strip
     #while the name is not empty, repeat this code
     while !name.empty? do
       puts "please enter students cohort"
@@ -14,13 +14,13 @@
       end
 
       puts "please enter students hobby"
-      hobbies = gets.chomp
+      hobbies = gets.strip
 
       puts "Please enter students country of birth"
-      country_of_birth = gets.chomp
+      country_of_birth = gets.strip
 
       puts "Please enter students height"
-      height = gets.chomp
+      height = gets.strip
       #add the student hash to the array
       students << {
         name: name,
@@ -36,7 +36,7 @@
       end
       # get another name from the user
       puts "Please enter next students name"
-      name = gets.chomp
+      name = gets.strip
     end
     #return the array of students
     students
